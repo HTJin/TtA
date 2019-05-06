@@ -1,10 +1,15 @@
 import React from 'react';
-import './App.css';
+import { Route, Redirect } from 'react-router-dom'
+
+import Main from './Menu/Main'
+import Play from './Game/Play'
 
 function App() {
   return (
-    <div className="App">
-      
+    <div>
+      <Route exact path='/' render={() => <Redirect to='/main' />} />
+      <Route path='/main' component={Main} />
+      <Route path='/play' component={Play} />
     </div>
   );
 }

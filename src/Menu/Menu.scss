@@ -1,0 +1,30 @@
+.menu-display {
+  color: #fff;
+  text-align: center;
+  .options {
+    border-radius: 8px;
+    border: dotted;
+    background: #1A2126;
+    width: 90vw;
+    height: 75vh;
+    margin: 0 auto;
+    font-size: 28px;
+    .choices {
+      display: flex;
+      justify-content: space-around;
+      border-width: 3px;
+      a { text-decoration: none; }
+      .player {
+        border-radius: 3px;
+        color: #fff;
+        text-align: center;
+        font-size: 72px;
+        padding: 50px 80px;
+        margin-top: 10vw;
+      }
+      .two { background: #23A6D5; }
+      .three { background: #5BBD75; }
+      .four { background: #EE7752; }
+    }
+  }
+}
